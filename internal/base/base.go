@@ -31,14 +31,28 @@ const DefaultQueueName = "default"
 // DefaultQueue is the redis key for the default queue.
 var DefaultQueue = PendingKey(DefaultQueueName)
 
-// Global Redis keys.
-const (
-	AllServers    = "asynq:servers"    // ZSET
-	AllWorkers    = "asynq:workers"    // ZSET
-	AllSchedulers = "asynq:schedulers" // ZSET
-	AllQueues     = "asynq:queues"     // SET
-	CancelChannel = "asynq:cancel"     // PubSub channel
-)
+// GlobalPrefix is the prefix for all redis keys used by asynq.
+var GlobalPrefix = "asynq"
+
+func AllServers() string {
+	return fmt.Sprintf("%s:servers", GlobalPrefix) // ZSET
+}
+
+func AllWorkers() string {
+	return fmt.Sprintf("%s:workers", GlobalPrefix) // ZSET
+}
+
+func AllSchedulers() string {
+	return fmt.Sprintf("%s:schedulers", GlobalPrefix) // ZSET
+}
+
+func AllQueues() string {
+	return fmt.Sprintf("%s:queues", GlobalPrefix) // SET
+}
+
+func CancelChannel() string {
+	return fmt.Sprintf("%s:cancel", GlobalPrefix) // PubSub channel
+}
 
 // TaskState denotes the state of a task.
 type TaskState int

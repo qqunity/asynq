@@ -9,6 +9,7 @@ import (
 
 	"github.com/go-redis/redis/v8"
 	"github.com/hibiken/asynq"
+	"github.com/hibiken/asynq/internal/base"
 	asynqcontext "github.com/hibiken/asynq/internal/context"
 )
 
@@ -110,5 +111,5 @@ func (s *Semaphore) Close() error {
 }
 
 func semaphoreKey(scope string) string {
-	return fmt.Sprintf("asynq:sema:%s", scope)
+	return fmt.Sprintf("%s:sema:%s", base.GlobalPrefix, scope)
 }
