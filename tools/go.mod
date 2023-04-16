@@ -8,11 +8,11 @@ require (
 	github.com/gdamore/tcell/v2 v2.5.1
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/google/go-cmp v0.5.6
-	github.com/qqunity/asynq v0.23.0
-	github.com/qqunity/asynq/x v0.0.0-20220131170841-349f4c50fb1d
 	github.com/mattn/go-runewidth v0.0.13
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/prometheus/client_golang v1.11.0
+	github.com/qqunity/asynq v0.0.2
+	github.com/qqunity/asynq/x v0.0.0-20230416165242-feb64c4c3b3f
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.7.0
