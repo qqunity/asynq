@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/hibiken/asynq/internal/base"
+	"github.com/qqunity/asynq/internal/base"
 )
 
 // Task represents a unit of work to be performed.
