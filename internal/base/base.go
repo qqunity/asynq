@@ -14,11 +14,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/qqunity/asynq/internal/errors"
 	pb "github.com/qqunity/asynq/internal/proto"
 	"github.com/qqunity/asynq/internal/timeutil"
+	"github.com/redis/go-redis/v9"
 	"google.golang.org/protobuf/proto"
 )
 

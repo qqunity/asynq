@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 	"github.com/qqunity/asynq/internal/base"
 	"github.com/qqunity/asynq/internal/errors"
 	"github.com/qqunity/asynq/internal/rdb"

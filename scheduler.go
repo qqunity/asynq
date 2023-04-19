@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
 	"github.com/qqunity/asynq/internal/base"
 	"github.com/qqunity/asynq/internal/log"
 	"github.com/qqunity/asynq/internal/rdb"
+	"github.com/redis/go-redis/v9"
 	"github.com/robfig/cron/v3"
 )
 
